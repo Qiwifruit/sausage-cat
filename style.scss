@@ -202,9 +202,7 @@ body{
     margin-top: 50px;
     min-height: calc(100% - 110px);
     @media screen and (max-width: 768px){ min-height: calc(100% - 120px);}
-    @media screen and (max-width: 768px){ min-height: calc((var(--vh, 1vh) * 100)- 120px);}
     @media screen and (max-height: 800px){ min-height: calc(100% - 120px);}
-    @media screen and (max-width: 800px){ min-height: calc((var(--vh, 1vh) * 100)- 120px);}
     padding: 2.5% 15%;
 }
 
@@ -289,7 +287,6 @@ footer {
 #landing {
     background: $bg-color1;
     background: $gradient;
-    overflow: hidden;
 }
 
 #landing-cont {
@@ -391,12 +388,12 @@ footer {
     justify-content: center;
 
     img { width: 100%; height: auto; z-index: -1;}
-    @media screen and (max-width: 1200px) and (min-width: 1024px){img { width: 80%; object-fit: contain ; }}
-    @media screen and (max-width: 1024px){ img { width: 90%; object-fit: contain ; }}
-    @media screen and (max-width: 567px){img { width: 55%; object-fit: contain ; }}
-    @media screen and (max-height: 800px) and (min-width: 567px){img { object-fit: contain ; height: 95%; }}
-    @media screen and (max-height: 800px) and (min-width: 100px) and (max-width: 567px){img { object-fit: contain ; height: 40vh; }}
-    @media screen and (min-width: 1990px) {img { object-fit: contain ; height: 102%; }}
+    @media screen and (max-width: 1200px) and (min-width: 1024px){img { width: 80%; height: auto; object-fit: contain ; }}
+    @media screen and (max-width: 1024px){ img { width: 90%; height: auto; object-fit: contain ; }}
+    @media screen and (max-width: 567px){img { width: 55%; height: auto; object-fit: contain ; }}
+    @media screen and (max-height: 800px) and (min-width: 567px){img { object-fit: contain ; height: 95%; width: auto;}}
+    @media screen and (max-height: 800px) and (min-width: 100px) and (max-width: 567px){img { object-fit: contain ; height: 40vh; width: auto;}}
+    @media screen and (min-width: 1990px) {img { object-fit: contain ; height: 102%; width: auto;}}
 }
 
 @media screen and (max-width: 567px){
@@ -849,14 +846,11 @@ footer {
 
 #wechat-content {
     height: calc(100% - 180px);
-    height: calc((var(--vh, 1vh) * 100) - 180);
     @media screen and (max-width: 768px){
         height: calc(100% - 140px);
-        height: calc((var(--vh, 1vh) * 100) - 140);
     }
     @media screen and (max-height: 800px){
         height: calc(100% - 140px);
-        height: calc((var(--vh, 1vh) * 100) - 140);
     }
     display: flex;
     align-content: center;
@@ -892,12 +886,13 @@ footer {
 
         img {
             width: 100%;
-            object-fit: contain;
             max-width: 500px;
+            height: auto;
+            object-fit: contain;
             border: solid 10px white;
             border-radius: 10px;
             @media screen and (max-height: 500px){ 
-                object-fit: contain;
+                width: auto;
                 height: 100%;
                 border: solid 4px white;
                 border-radius: 4px;

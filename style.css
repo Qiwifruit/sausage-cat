@@ -10075,19 +10075,9 @@ body {
     min-height: calc(100% - 120px);
   }
 }
-@media screen and (max-width: 768px) {
-  .sticky-content {
-    min-height: calc((var(--vh, 1vh) * 100)- 120px);
-  }
-}
 @media screen and (max-height: 800px) {
   .sticky-content {
     min-height: calc(100% - 120px);
-  }
-}
-@media screen and (max-width: 800px) {
-  .sticky-content {
-    min-height: calc((var(--vh, 1vh) * 100)- 120px);
   }
 }
 
@@ -10180,7 +10170,6 @@ footer p {
 #landing {
   background: #fbb03b;
   background: linear-gradient(160deg, #fbb03b 0%, #e97e00 100%);
-  overflow: hidden;
 }
 
 #landing-cont {
@@ -10297,18 +10286,21 @@ footer p {
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
   .landing-r img {
     width: 80%;
+    height: auto;
     object-fit: contain;
   }
 }
 @media screen and (max-width: 1024px) {
   .landing-r img {
     width: 90%;
+    height: auto;
     object-fit: contain;
   }
 }
 @media screen and (max-width: 567px) {
   .landing-r img {
     width: 55%;
+    height: auto;
     object-fit: contain;
   }
 }
@@ -10316,18 +10308,21 @@ footer p {
   .landing-r img {
     object-fit: contain;
     height: 95%;
+    width: auto;
   }
 }
 @media screen and (max-height: 800px) and (min-width: 100px) and (max-width: 567px) {
   .landing-r img {
     object-fit: contain;
     height: 40vh;
+    width: auto;
   }
 }
 @media screen and (min-width: 1990px) {
   .landing-r img {
     object-fit: contain;
     height: 102%;
+    width: auto;
   }
 }
 
@@ -10819,7 +10814,6 @@ footer p {
 
 #wechat-content {
   height: calc(100% - 180px);
-  height: calc((var(--vh, 1vh) * 100) - 180);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -10828,13 +10822,11 @@ footer p {
 @media screen and (max-width: 768px) {
   #wechat-content {
     height: calc(100% - 140px);
-    height: calc((var(--vh, 1vh) * 100) - 140);
   }
 }
 @media screen and (max-height: 800px) {
   #wechat-content {
     height: calc(100% - 140px);
-    height: calc((var(--vh, 1vh) * 100) - 140);
   }
 }
 #wechat-content h1 {
@@ -10873,14 +10865,15 @@ footer p {
 }
 #wechat-content #qrbox img {
   width: 100%;
-  object-fit: contain;
   max-width: 500px;
+  height: auto;
+  object-fit: contain;
   border: solid 10px white;
   border-radius: 10px;
 }
 @media screen and (max-height: 500px) {
   #wechat-content #qrbox img {
-    object-fit: contain;
+    width: auto;
     height: 100%;
     border: solid 4px white;
     border-radius: 4px;
