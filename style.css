@@ -10808,6 +10808,7 @@ footer p {
 
 #wechat-content {
   height: calc(100% - 180px);
+  height: calc((var(--vh, 1vh) * 100) - 180);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -10816,11 +10817,13 @@ footer p {
 @media screen and (max-width: 768px) {
   #wechat-content {
     height: calc(100% - 140px);
+    height: calc((var(--vh, 1vh) * 100) - 140);
   }
 }
 @media screen and (max-height: 800px) {
   #wechat-content {
     height: calc(100% - 140px);
+    height: calc((var(--vh, 1vh) * 100) - 140);
   }
 }
 #wechat-content h1 {
@@ -10859,6 +10862,7 @@ footer p {
 }
 #wechat-content #qrbox img {
   width: 100%;
+  height: auto;
   max-width: 500px;
   border: solid 10px white;
   border-radius: 10px;

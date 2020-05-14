@@ -846,11 +846,14 @@ footer {
 
 #wechat-content {
     height: calc(100% - 180px);
+    height: calc((var(--vh, 1vh) * 100) - 180);
     @media screen and (max-width: 768px){
         height: calc(100% - 140px);
+        height: calc((var(--vh, 1vh) * 100) - 140);
     }
     @media screen and (max-height: 800px){
         height: calc(100% - 140px);
+        height: calc((var(--vh, 1vh) * 100) - 140);
     }
     display: flex;
     align-content: center;
@@ -886,6 +889,7 @@ footer {
 
         img {
             width: 100%;
+            height: auto;
             max-width: 500px;
             border: solid 10px white;
             border-radius: 10px;
