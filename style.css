@@ -10873,14 +10873,18 @@ footer p {
 }
 @media screen and (max-height: 500px) {
   #wechat-content #qrbox img {
-    width: auto;
-    height: 100%;
-    border: none;
+    width: 80px;
+    height: 80px;
+    border: solid 4px white;
+    border-radius: 4px;
   }
 }
 @media screen and (max-width: 500px) {
   #wechat-content #qrbox img {
-    border: none;
+    width: 80px;
+    height: 80px;
+    border: solid 4px white;
+    border-radius: 4px;
   }
 }
 
