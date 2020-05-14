@@ -30,7 +30,7 @@ body{
     padding: 0;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .cont {
