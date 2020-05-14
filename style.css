@@ -10172,6 +10172,7 @@ footer p {
 #landing {
   background: #fbb03b;
   background: linear-gradient(160deg, #fbb03b 0%, #e97e00 100%);
+  overflow: hidden;
 }
 
 #landing-cont {
@@ -10806,6 +10807,10 @@ footer p {
 }
 .popover .popover-body img {
   width: 100%;
+}
+
+#wechat {
+  overflow: hidden;
 }
 
 #wechat-cont {

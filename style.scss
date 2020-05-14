@@ -289,6 +289,7 @@ footer {
 #landing {
     background: $bg-color1;
     background: $gradient;
+    overflow: hidden;
 }
 
 #landing-cont {
@@ -839,6 +840,10 @@ footer {
 }
 
 //Wechat
+
+#wechat {
+    overflow: hidden;
+}
 
 #wechat-cont {
     overflow: hidden;
