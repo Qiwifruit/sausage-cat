@@ -10865,24 +10865,24 @@ footer p {
 }
 #wechat-content #qrbox img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   object-fit: contain;
   border: solid 10px white;
   border-radius: 10px;
 }
-@media screen and (max-height: 500px) {
+@media screen and (max-width: 400px) {
   #wechat-content #qrbox img {
-    width: 50vh;
-    height: 50vh;
+    width: 50vw;
+    height: 50vw;
     border: solid 4px white;
     border-radius: 4px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 400px) {
   #wechat-content #qrbox img {
-    width: 50vw;
-    height: 50vw;
+    width: 35vh;
+    height: 35vh;
     border: solid 4px white;
     border-radius: 4px;
   }
