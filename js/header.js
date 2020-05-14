@@ -27,7 +27,7 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
-    if($(window).scrollTop()) {
+    if($(body).scrollTop()) {
         $('.site-header').addClass('sticky-header');
         $('.content').addClass('sticky-content');
     }
