@@ -10852,16 +10852,16 @@ footer p {
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 400px) {
+  #wechat-content h1 {
+    display: none;
+  }
+}
 #wechat-content #qrbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-}
-@media screen and (max-height: 500px) {
-  #wechat-content #qrbox {
-    height: 70%;
-  }
 }
 #wechat-content #qrbox img {
   width: 100%;
@@ -10879,12 +10879,20 @@ footer p {
     border-radius: 4px;
   }
 }
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 500px) {
   #wechat-content #qrbox img {
     width: 35vh;
     height: 35vh;
     border: solid 4px white;
     border-radius: 4px;
+  }
+}
+@media screen and (max-height: 500px) {
+  #wechat-content #qrbox img {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: none;
   }
 }
 
