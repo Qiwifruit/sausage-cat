@@ -9896,6 +9896,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -9906,6 +9907,7 @@ body {
   padding: 0;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  overflow: scroll;
 }
 
 .cont {
@@ -10889,8 +10891,8 @@ footer p {
 }
 @media screen and (max-height: 400px) {
   #wechat-content #qrbox img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: none;
     border-radius: none;
   }
