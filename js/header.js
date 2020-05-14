@@ -27,12 +27,12 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
-    if($(body).scrollTop()) {
-        $('.site-header').addClass('sticky-header');
+    if($(window).scrollTop()) {
+        $('.header-2').addClass('sticky-header');
         $('.content').addClass('sticky-content');
     }
     else {
-        $('.site-header').removeClass('sticky-header');
+        $('.header-2').removeClass('sticky-header');
         $('.content').removeClass('sticky-content');
     }
 });

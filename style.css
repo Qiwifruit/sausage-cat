@@ -9896,7 +9896,6 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -10053,7 +10052,7 @@ body {
   }
 }
 
-#header-2 {
+.header-2 {
   background-color: #fbb03b;
   width: 100%;
 }

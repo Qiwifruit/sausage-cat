@@ -19,7 +19,6 @@ html{
     margin:0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
 }
 
 body{
@@ -187,7 +186,7 @@ body{
     }
 }
 
-#header-2 { //regular page adjustments
+.header-2 { //regular page adjustments
     background-color: $bg-color1;
     width: 100%;
 }
