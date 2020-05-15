@@ -29,11 +29,11 @@ $(window).resize(function() {
 $(window).scroll(function() {
     if($(window).scrollTop()) {
         $('.header-2').addClass('sticky-header');
-        $('.content').addClass('sticky-content');
+        $('.page-content').addClass('sticky-content');
     }
     else {
         $('.header-2').removeClass('sticky-header');
-        $('.content').removeClass('sticky-content');
+        $('.page-content').removeClass('sticky-content');
     }
 });
 
